@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Приклад використання CSS</title> <!-- Заголовок сторінки -->
+    <!-- Встановлення стилів для тегів в HTML-документі -->
+    <style type="text/css">
+        /* Застосування стилів до елементів з класами external, internal і inline-style */
+        .external p, .internal p, .inline-style p {
+            border: 2px solid black; /* Чорна рамка товщиною 2px */
+            padding: 10px; /* Внутрішні поля навколо тексту */
+            display: inline-block; /* Відображення як вбудований блок */
+            width: 300px; /* Фіксована ширина */
+            text-align: center; /* Вирівнювання тексту по центру */
+        }
+        .external p {
+            background-color: #00FF00; /* Зелений фон */
+            border-color: rgb(0, 104, 0); /* Колір рамки */
+        }
+        .internal p {
+            background-color: #FFFF00; /* Жовтий фон */
+            border-color: rgb(182, 182, 0); /* Колір рамки */
+        }
+        .inline-style p {
+            background-color: #FF0000; /* Червоний фон */
+            border-color: rgb(128, 0, 0); /* Колір рамки */
+        }
+        /* Підсвітка при наведенні мишкою */
+        .external p:hover {
+            background-color: #99FF99; /* Світло-зелений фон при наведенні */
+        }
+        .internal p:hover {
+            background-color: #ffffab; /* Світло-жовтий фон при наведенні */
+        }
+        .inline-style p:hover {
+            background-color: #FF9999; /* Світло-червоний фон при наведенні */
+        }
+    </style>
+    <!-- Посилання на зовнішню таблицю стилів -->
+    <link rel="stylesheet" type="text/css" href="lab1_1.css"> <!-- Підключення зовнішнього файлу стилів -->
+</head>
+<body>
+    <!-- Додавання CSS в HTML-тег -->
+    <div class="inline-style">
+        <p>Колір фону цього елемента - червоний</p> <!-- Текст з червоним фоном і червоною рамкою -->
+    </div>
+    <!-- Встановлення стилів для тегів в HTML-документі -->
+    <div class="internal">
+        <p>Колір фону цього елемента - жовтий</p> <!-- Текст з жовтим фоном і жовтою рамкою -->
+    </div>
+    <!-- Посилання на таблицю стилів -->
+    <div class="external">
+        <p>Колір фону цього елемента - зелений</p> <!-- Текст з зеленим фоном і зеленою рамкою -->
+    </div>
+</body>
+</html>
